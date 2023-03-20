@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--------------- Header Section ---------------*/
+nav {
+    color: red;
+}
+
+#hero-section {
+    color: blue;
+}
+
+/*--------------- Our Story Section ---------------*/
+#our-story-section {
+    color: green;
+}
+
+/*--------------- Watch Section ---------------*/
+#watch-section {
+    color: darkred;
+}
+
+/*--------------- Expertise Section ---------------*/
+#expertise-section {
+    color: fuchsia;
+}
+
+/*--------------- Team Section ---------------*/
+#team-section {
+    color: yellowgreen;
+}
+
+/*--------------- Contact Section ---------------*/
+#contact-client-section {
+    color: lightsalmon;
+}
+
+/*--------------- Footer ---------------*/
+footer {
+    color: blueviolet;
+}
