@@ -1,44 +1,58 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*--------------- Header Section ---------------*/
 nav {
-    color: red;
+  color: red;
 }
 
 #hero-section {
-    color: blue;
+  color: blue;
 }
 
 /*--------------- Our Story Section ---------------*/
 #our-story-section {
-    color: green;
+  color: green;
 }
 
 /*--------------- Watch Section ---------------*/
 #watch-section {
-    color: darkred;
+  color: darkred;
 }
 
 /*--------------- Expertise Section ---------------*/
 #expertise-section {
-    color: fuchsia;
+  color: fuchsia;
 }
 
 /*--------------- Team Section ---------------*/
 #team-section {
-    color: yellowgreen;
+  color: rgb(255, 255, 255);
+  border: solid red;
+  background-image: url("bgk-header.png");
+}
+.box1 {
+  background-color: blueviolet;
+  color: white;
+  width: 200px;
+  height: 200px;
+}
+.box2 {
+  background-color: greenyellow;
+  color: white;
+  width: 200px;
+  height: 200px;
 }
 
 /*--------------- Contact Section ---------------*/
 #contact-client-section {
-    color: lightsalmon;
+  color: lightsalmon;
 }
 
 /*--------------- Footer ---------------*/
 footer {
-    color: blueviolet;
+  color: blueviolet;
 }
