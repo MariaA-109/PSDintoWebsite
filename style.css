@@ -4,30 +4,209 @@
     box-sizing: border-box;
 }
 
-/*--------------- Header Section ---------------*/
+body {
+    width: 100vw;
+    font-family: Helvetica, sans-serif;
+}
+hr {
+    width: 5rem;
+    margin: 1rem auto;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2 {
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+}
+
+/* Farben 
+Grautürkis #4ad9cd
+Leichtblau #7dcfd8      #7abed4
+Mittelblau #67a9cb
+Blau #3b85ab
+
+Logo
+#11132c
+#2b2b5e
+#5da3c9
+#72bfbe
+*/
+
+/*--------------- Nav Section ---------------*/
+header {
+    background-image: url("bgk-header.png");
+    background-attachment: top 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+}
 nav {
-    color: red;
+    display: flex;
+    justify-content: space-around;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+    margin-right: 1rem;
+}
+nav a {
+    color: #f5f5f5;
+    font-weight: bold;
+    font-size: 0.7rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav a:hover {
+    color: #757575;
+}
+.branding {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    width: fit-content;
+    background: -webkit-linear-gradient(left, #4ad9cd 0%, #3b85ab 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.branding span {
+    margin-left: 0.5rem;
 }
 
+/*--------------- Hero Section ---------------*/
 #hero-section {
-    color: blue;
+    padding: 5rem 0 7rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
 }
-
+.hero-content {
+    text-align: center;
+    color: #f5f5f5;
+    grid-column: 2/3;
+}
+.hero-content p {
+    margin-bottom: 3rem;
+}
+.hero-content a {
+    border: 1px solid #f5f5f5;
+    border-radius: 3px;
+    color: #f5f5f5;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0.7rem;
+}
 /*--------------- Our Story Section ---------------*/
 #our-story-section {
-    color: green;
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2.5fr 0.5fr;
+    align-items: top;
+    column-gap: 2rem;
+    color: #3b85ab;
 }
-
+#our-story-section img {
+    grid-column: 2/3;
+}
+.story-content {
+    margin-bottom: 4rem;
+}
+.story-content h2 {
+    color: #11132c;
+    margin-bottom: 1rem;
+}
+.story-content p {
+    color: #2b2b5e;
+    margin-bottom: 2rem;
+}
+.story-content a {
+    border: 1px solid #5da3c9;
+    border-radius: 3px;
+    color: #5da3c9;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0.7rem;
+}
 /*--------------- Watch Section ---------------*/
 #watch-section {
-    color: darkred;
+    height: 550px;
+    background-image: url("bgk-middle.png");
+    background-attachment: top 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    color:#f5f5f5;
 }
 
 /*--------------- Expertise Section ---------------*/
 #expertise-section {
-    color: fuchsia;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 0;
+    color: #2b2b5e;
+}
+#expertise-section h2 {
+    color: #11132c;
+}
+.expertise-grid-container {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.expertise-grid-item {
+    padding: 1.5rem;
+
+    border-top: 1px solid #5da3c9;
+    border-left: 1px solid #5da3c9;
+}
+.expertise-grid-item:nth-child(-n+2) { 
+    border-left: 1px solid #5da3c9;
+}
+.expertise-grid-item:nth-child(odd) {
+    border-left: 1px solid #5da3c9;
+}
+.expertise-grid-item:nth-child(-n+3) {
+    border-top: none;
+}
+.expertise-grid-item:nth-child(3n+1) {
+    border-left: none;
 }
 
+.expertise-grid-item h3{
+    font-size: 0.8rem;
+    font-weight: 800;
+    margin: 1rem 0;
+}
 /*--------------- Team Section ---------------*/
 #team-section {
     color: yellowgreen;
