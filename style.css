@@ -207,8 +207,15 @@ nav a:hover {
     font-weight: 800;
     margin: 1rem 0;
 }
+
 /*--------------- Team Section ---------------*/
-.meet-the-team {
+#team-section {
+    color: rgb(255, 255, 255);
+    background-image: url("bgk-header.png");
+    height: 90vh;
+  }
+  
+  .meet-the-team {
     padding: 4%;
   }
   .team {
@@ -220,11 +227,62 @@ nav a:hover {
     text-align: center;
     line-height: 1.8rem;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    
   }
-#team-section {
-    color: yellowgreen;
-}
+  
+  h4 {
+    font-weight: lighter;
+  }
+  
+  h6 {
+    font-weight: lighter;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    display: inline-block;
+    margin-right: 1rem;
+    background-color: white;
+    width: 200px;
+    height: 220px;
+    font-weight: bolder;
+  }
+  .box5,
+  .box6,
+  .box7,
+  .box8 {
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    display: inline-block;
+    color: white;
+    width: 200px;
+    border: 0.5px solid white;
+    text-align: center;
+    margin-top: 110%;
+    height: 60px;
+    padding: 10px;
+  }
+  .button {
+    font-size: 11px;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 1rem;
+    text-align: center;
+    color: #5fc9c1;
+    border: 1px solid;
+    background-color: transparent;
+    padding: 1%;
+    width: 8%;
+  }
+  
+  .join {
+    margin-top: 5%;
+    text-align: center;
+  }
 /*--------------- Contact Section ---------------*/
 #contact-client-section {
   color: black;
