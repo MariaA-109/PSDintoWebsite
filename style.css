@@ -354,86 +354,57 @@ footer {
   color: white;
   background-image: url("bgk-footer.png");
   background-size: cover;
-  padding: 4rem;
+  padding: 7rem;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.info {
-  padding-left: 5rem;
-  padding-top: 3rem;
-  line-height: 1.3;
-}
-
-.studio,
-.newsletter {
-  padding: 20%;
-  line-height: 1.3;
-}
-
-.img-studio {
-  padding-right: 1rem;
-}
-
-#tajamlogo {
-  position: absolute;
-  margin-top: 1rem;
-}
+#tajamlogo,
 .logotitle {
-  font-size: 25px;
-  display: inline-block;
-  position: relative;
-  padding: 1rem;
-  margin-left: 3rem;
-  margin-top: 0.5rem;
-  background-color: transparent;
-  background-image: linear-gradient(
-    45deg,
-    #9ae9e0 2px,
-    #62dcd0 10px,
-    #6aabcd 20px
-  );
-  background-size: 100%;
+  display: flex;
+  font-size: 2rem;
+  width: fit-content;
+  background: -webkit-linear-gradient(left, #4ad9cd 0%, #3b85ab 90%);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
-.newsletter {
-  display: inline-block;
+
+.logo-section {
+  border: solid 1px green;
+  display: flex;
 }
-.form-input {
-  width: 11rem;
-  height: 2rem;
-  background-color: transparent;
+.info {
+  border: solid 1px red;
+  padding: 1.8rem;
+}
+
+.infotext {
+  border: solid 1px yellow;
   font-size: 12px;
-  padding: 0.8rem;
+  padding: 1rem;
 }
 
-#submit-button {
-  width: 3rem;
-  height: 2rem;
-  background-color: white;
-  opacity: 0.3;
-  border: none;
-  position: absolute;
-  margin-top: 0.5rem;
+.studio {
+  justify-content: space-around;
+  padding: 1.8rem;
+  border: solid 1px pink;
 }
-.paper {
-  padding: 0.5rem;
-  width: 2rem;
-}
-.social {
-  padding-top: 1rem;
-  padding-left: 0.3rem;
+.img-studio {
+  border: solid 1px yellow;
+  width: 1rem;
 }
 
-.icon-social {
-  width: 2rem;
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px blueviolet;
+  font-size: 12px;
+  line-height: 2;
 }
+/*--------------- Nav-Footer ---------------*/
 
 .nav-footer {
   display: inline-block;
@@ -442,8 +413,6 @@ footer {
 .nav-menu {
   display: grid;
   grid-template-columns: 3fr 1fr 1fr 1fr;
-  margin-left: 5rem;
-  position: absolute;
   justify-content: space-between;
 }
 
