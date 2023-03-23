@@ -437,12 +437,20 @@ footer {
   .branding {
     margin-bottom: 1rem;
   }
+  nav ul li {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+  /*----- Adjusted Story Section -----*/
   #our-story-section {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .story-content {
+    margin-top: 2rem;
     grid-column: 2/span 1;
     grid-row: 2/span 1;
+    text-align: center;
   }
 
   /*----- Adjusted Expertise Section -----*/
