@@ -54,6 +54,7 @@ header {
   background-size: cover;
   padding: 1rem;
 }
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -252,8 +253,8 @@ h6 {
 .box4 {
   margin-right: 1rem;
   background-color: white;
-  width: 200px;
-  height: 220px;
+  width: 20vw;
+  height: 22vh;
   font-weight: bolder;
 }
 .box5,
@@ -264,7 +265,7 @@ h6 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   color: white;
-  width: 200px;
+  width: 20vw;
   border: 0.5px solid white;
   text-align: center;
   padding: 1rem;
@@ -289,13 +290,15 @@ h6 {
 #contact-client-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 5rem;
-  padding: 7rem;
+  column-gap: 2rem;
+  padding: 5rem;
+  margin: 0 auto;
 }
 
 #news {
   display: flex;
   padding: 1rem;
+  margin: 0 auto;
 }
 .form-box {
   display: flex;
@@ -304,15 +307,15 @@ h6 {
 #form-input {
   font-size: 12px;
   padding: 0.8rem;
-  width: 30rem;
+  width: 35vw;
   height: 1.5rem;
   border: solid 0.3px gray;
 }
 
 #form-message {
   font-size: 12px;
-  padding: 0.8rem;
-  width: 30rem;
+  padding: 0rem 3rem 3rem 0.8rem;
+  width: 35vw;
   min-height: 5rem;
   border: solid 0.3px gray;
 }
@@ -333,10 +336,22 @@ h6 {
 }
 
 /*--------------- Client Section---------------*/
+.title-footer {
+  text-align: left;
+  margin: 3rem 0rem 2rem 0rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
+.client {
+  width: 35vw;
+}
 .clientbox {
+  margin: 0rem 1rem 1rem 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 .clientbox1 {
   display: flex;
@@ -348,7 +363,7 @@ h6 {
   flex-direction: column;
 }
 .logo {
-  width: 8rem;
+  width: 15vw;
   padding: 1rem;
 }
 /*--------------- Footer ---------------*/
@@ -362,14 +377,17 @@ footer {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
 }
 .infobox {
+  width: 24vw;
   font-size: smaller;
   padding: 0.6rem;
   line-height: 1.5rem;
 }
 .logo-name {
   display: flex;
+  flex-direction: row;
 }
 #brand-name {
   padding: 2rem;
@@ -381,21 +399,23 @@ footer {
 }
 
 .infotext {
+  width: 20vw;
 }
 
 .studio {
+  width: 24vw;
   font-size: smaller;
-  padding: 0.6rem;
 }
 
 .text-studio {
   padding: 1rem;
   font-size: 15px;
   font-weight: 700;
-  margin: 1rem;
+  margin: 1rem 0rem 0rem 0rem;
 }
 
 .address {
+  width: 20vw;
   line-height: 1.5rem;
 }
 
@@ -403,9 +423,12 @@ footer {
   margin: 0.3rem;
   padding: 0.5rem;
 }
+.phone {
+  margin: 1rem 0rem 0rem 0rem;
+}
 .newsletter {
+  width: 24vw;
   font-size: smaller;
-  padding: 0.6rem;
 }
 .form-footer {
   display: flex;
@@ -413,43 +436,61 @@ footer {
 }
 
 .input-mail {
-  padding: 0.5rem 0rem 0.5rem 0.5rem;
+  width: 60vw;
   background-color: transparent;
+  border: solid 0.3px gainsboro;
+  min-width: 100px;
+}
+.input-mail::placeholder {
+  color: gainsboro;
+  font-size: 12px;
+  align-items: center;
+  padding: 1rem;
 }
 .paper-button {
-  background-color: transparent;
+  width: 20vw;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 0.4;
   border: none;
-  margin-left: 1rem;
+  margin: 0rem 0rem 0rem 0.5rem;
+}
+#paper {
+  width: 2rem;
+  padding: 0.3rem;
 }
 .social {
   display: flex;
+  justify-content: space-between;
+  margin: 2rem 0rem 0rem 0rem;
+  width: 20vw;
 }
 /*--------------- Nav-Footer ---------------*/
-
-.max-container {
-  margin: 0 auto;
-}
 .nav-footer {
-  display: inline-block;
+  margin: 4rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0.8rem;
+}
+.nav-bar {
+  display: inline;
+}
+.nav-ul {
+  gap: 1rem;
+}
+.nav-li {
+  width: 5vw;
+}
+#copyright {
+  display: flex;
+  justify-content: flex-end;
+  width: 45vw;
 }
 
-.nav-menu {
-  display: grid;
-  grid-template-columns: 3fr 1fr 1fr 1fr;
-  justify-content: space-between;
-}
-
-.nav-text {
-  text-decoration: none;
-  color: white;
-  margin-right: 3rem;
+#copy-text {
   font-size: 11px;
+  font-weight: 200;
+  text-transform: inherit;
 }
-
-.copyright {
-  font-size: 11px;
-}
-@media only screen and (max-width: 630px){
+/*--------------- MediaQ ---------------*/
+@media only screen and (max-width: 630px) {
   /*----- Adjusted Navbar -----*/
   nav {
     flex-direction: column;
@@ -469,8 +510,8 @@ footer {
   }
   .story-content {
     margin-top: 2rem;
-    grid-column: 2/span 1;
-    grid-row: 2/span 1;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
     text-align: center;
   }
 
@@ -479,10 +520,10 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  .expertise-grid-item { 
+  .expertise-grid-item {
     border: none !important;
   }
-  .expertise-grid-item:not(:last-child){
+  .expertise-grid-item:not(:last-child) {
     border-bottom: 1px solid #5da3c9 !important;
   }
 }
