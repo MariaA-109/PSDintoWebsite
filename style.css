@@ -230,7 +230,7 @@ nav a:hover {
 h3,
 h4 {
   text-align: center;
-  line-height: 1.8rem;
+  margin: 1rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
@@ -359,12 +359,18 @@ footer {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
-
-#tajamlogo,
-.logotitle {
+.infobox {
+  font-size: smaller;
+  padding: 0.6rem;
+  line-height: 1.5rem;
+}
+.logo-name {
   display: flex;
+}
+#brand-name {
+  padding: 2rem;
   font-size: 2rem;
   width: fit-content;
   background: -webkit-linear-gradient(left, #4ad9cd 0%, #3b85ab 90%);
@@ -372,40 +378,55 @@ footer {
   -webkit-text-fill-color: transparent;
 }
 
-.logo-section {
-  border: solid 1px green;
-  display: flex;
-}
-.info {
-  border: solid 1px red;
-  padding: 1.8rem;
-}
-
 .infotext {
-  border: solid 1px yellow;
-  font-size: 12px;
-  padding: 1rem;
 }
 
 .studio {
-  justify-content: space-around;
-  padding: 1.8rem;
-  border: solid 1px pink;
-}
-.img-studio {
-  border: solid 1px yellow;
-  width: 1rem;
+  font-size: smaller;
+  padding: 0.6rem;
 }
 
-.contact-info {
+.text-studio {
+  padding: 1rem;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 1rem;
+}
+
+.address {
+  line-height: 1.5rem;
+}
+
+.icon {
+  margin: 0.3rem;
+  padding: 0.5rem;
+}
+.newsletter {
+  font-size: smaller;
+  padding: 0.6rem;
+}
+.form-footer {
   display: flex;
-  flex-direction: column;
-  border: solid 1px blueviolet;
-  font-size: 12px;
-  line-height: 2;
+  flex-direction: row;
+}
+
+.input-mail {
+  padding: 0.5rem 0rem 0.5rem 0.5rem;
+  background-color: transparent;
+}
+.paper-button {
+  background-color: transparent;
+  border: none;
+  margin-left: 1rem;
+}
+.social {
+  display: flex;
 }
 /*--------------- Nav-Footer ---------------*/
 
+.max-container {
+  margin: 0 auto;
+}
 .nav-footer {
   display: inline-block;
 }
