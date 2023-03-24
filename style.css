@@ -389,6 +389,7 @@ footer {
 .logo-name {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 #brand-name {
   padding: 2rem;
